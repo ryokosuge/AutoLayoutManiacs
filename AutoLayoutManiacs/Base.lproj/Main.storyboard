@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oFx-kM-F8H">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AutoLayoutManiacs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6cB-uv-6xf" userLabel="Navigation Bar Backing">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="3Ue-jo-Qgf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRk-aS-ekh">
+                                        <rect key="frame" x="20" y="270" width="335" height="736"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <attributedString key="attributedText">
+                                            <fragment>
+                                                <mutableString key="content">日本国及びアメリカ合衆国は、両国の間に伝統的に存在する平和及び友好の関係を強化し、並びに民主主義の諸原則、個人の自由及び法の支配を擁護することを希望し、また、両国の間の一層緊密な経済的協力を促進し、並びにそれぞれの国における経済的安定及び福祉の条件を助長することを希望し、国際連合憲章の目的及び原則に対する信念並びにすべての国民及びすべての政府とともに平和のうちに生きようとする願望を再確認し、両国が国際連合憲章に定める個別的又は集団的自衛の固有の権利を有していることを確認し、両国が極東における国際の平和及び安全の維持に共通の関心を有することを考慮し、相互協力及び安全保障条約を締結することを決意し、よって、次のとおり協定する。締約国は、国際連合憲章に定めるところに従い、それぞれが関係することのある国際紛争を平和的手段によつて国際の平和及び安全並びに正義を危うくしないように解決し、並びにそれぞれの国際関係において、武力による威嚇又は武力の行使を、いかなる国の領土保全又は政治的独立に対するものも、また、国際連合の目的と両立しない他のいかなる方法によるものも慎むことを約束する。</mutableString>
+                                                <attributes>
+                                                    <font key="NSFont" size="16" name="HiraMinProN-W3"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.3" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d6c-L8-5pt" userLabel="Image Container View">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="d6c-L8-5pt" secondAttribute="height" multiplier="375:250" id="3Ye-98-17O"/>
+                                        </constraints>
+                                    </view>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="owl" translatesAutoresizingMaskIntoConstraints="NO" id="q1M-ci-XYX" userLabel="Header Image View">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="q1M-ci-XYX" firstAttribute="height" relation="greaterThanOrEqual" secondItem="d6c-L8-5pt" secondAttribute="height" id="78L-pO-9fi"/>
+                                    <constraint firstItem="d6c-L8-5pt" firstAttribute="top" secondItem="3Ue-jo-Qgf" secondAttribute="top" id="8IY-qa-IGR"/>
+                                    <constraint firstAttribute="trailing" secondItem="d6c-L8-5pt" secondAttribute="trailing" id="9iJ-VS-x2T"/>
+                                    <constraint firstAttribute="trailing" secondItem="TRk-aS-ekh" secondAttribute="trailing" constant="20" id="GGe-oW-WKH"/>
+                                    <constraint firstAttribute="bottom" secondItem="TRk-aS-ekh" secondAttribute="bottom" constant="20" id="JAn-oT-bBe"/>
+                                    <constraint firstItem="d6c-L8-5pt" firstAttribute="leading" secondItem="3Ue-jo-Qgf" secondAttribute="leading" id="Mdy-SI-9tt"/>
+                                    <constraint firstItem="q1M-ci-XYX" firstAttribute="trailing" secondItem="d6c-L8-5pt" secondAttribute="trailing" id="Zms-NV-Yud"/>
+                                    <constraint firstItem="q1M-ci-XYX" firstAttribute="bottom" secondItem="d6c-L8-5pt" secondAttribute="bottom" priority="750" id="bu7-ML-r78"/>
+                                    <constraint firstItem="TRk-aS-ekh" firstAttribute="top" secondItem="d6c-L8-5pt" secondAttribute="bottom" constant="20" id="c9s-MZ-8j6"/>
+                                    <constraint firstItem="q1M-ci-XYX" firstAttribute="leading" secondItem="d6c-L8-5pt" secondAttribute="leading" id="mD3-GI-RsB"/>
+                                    <constraint firstItem="TRk-aS-ekh" firstAttribute="leading" secondItem="3Ue-jo-Qgf" secondAttribute="leading" constant="20" id="sVz-KE-RcJ"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="vJC-1M-b1F"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6cB-uv-6xf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="AY9-Ud-5xt"/>
+                            <constraint firstItem="3Ue-jo-Qgf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="IJf-LZ-Ur7"/>
+                            <constraint firstAttribute="trailing" secondItem="6cB-uv-6xf" secondAttribute="trailing" id="Idw-mE-pWd"/>
+                            <constraint firstAttribute="trailing" secondItem="TRk-aS-ekh" secondAttribute="trailing" constant="20" id="Jgd-Fv-nky"/>
+                            <constraint firstItem="q1M-ci-XYX" firstAttribute="height" relation="greaterThanOrEqual" secondItem="6cB-uv-6xf" secondAttribute="height" priority="250" id="Ndm-tC-iov"/>
+                            <constraint firstAttribute="trailing" secondItem="3Ue-jo-Qgf" secondAttribute="trailing" id="RdA-iv-EIr"/>
+                            <constraint firstItem="d6c-L8-5pt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="TKe-sZ-SJd"/>
+                            <constraint firstAttribute="trailing" secondItem="d6c-L8-5pt" secondAttribute="trailing" id="asc-9k-kkf"/>
+                            <constraint firstItem="q1M-ci-XYX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" priority="750" id="d1M-8p-18g"/>
+                            <constraint firstItem="3Ue-jo-Qgf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fK5-8x-1rx"/>
+                            <constraint firstItem="6cB-uv-6xf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hMU-fO-rcH"/>
+                            <constraint firstItem="6cB-uv-6xf" firstAttribute="bottom" secondItem="Rw0-47-Dec" secondAttribute="top" id="iWN-Cu-Vu4"/>
+                            <constraint firstItem="q1M-ci-XYX" firstAttribute="bottom" secondItem="6cB-uv-6xf" secondAttribute="bottom" priority="250" id="kGi-Lz-ec2"/>
+                            <constraint firstItem="TRk-aS-ekh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="mXb-2a-xNf"/>
+                            <constraint firstAttribute="bottom" secondItem="3Ue-jo-Qgf" secondAttribute="bottom" id="mcH-KV-evP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Rw0-47-Dec"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mUt-es-kDV"/>
+                    <size key="freeformSize" width="375" height="1000"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1043.4782608695652" y="133.25892857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5Cq-ik-B3k">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oFx-kM-F8H" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wBx-gT-tAN">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Xn1-R7-qzT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9zc-7D-Gyw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.33333333333334" y="133.25892857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="owl" width="320" height="213"/>
+    </resources>
+</document>
